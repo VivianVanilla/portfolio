@@ -1,0 +1,121 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #4a4a4a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #2a2a2a;
+}
+
+/* Project Cards */
+.container > div {
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Soft Color Classes */
+.container > div:nth-child(2) {
+  background-color: #fef6e4; /* light yellow-orange */
+}
+
+.container > div:nth-child(3) {
+  background-color: #e8f0fe; /* soft blue */
+}
+
+.container > div:nth-child(4) {
+  background-color: #e6f4ea; /* pale green */
+}
+
+.container > div:nth-child(5) {
+  background-color: #fce8f0; /* soft pink */
+}
+
+.container > div:nth-child(6) {
+  background-color: #f3e8fd; /* lavender */
+}
+
+/* Hover Effect */
+.container > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007acc;
+  transition: color 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #007acc;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #005c99;
+}
+
+/* Project Titles (h3 inside link) */
+a h3 {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+a h3:hover {
+  color: #005c99;
+}
+
+a:hover {
+  color: #005c99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .container > div {
+    padding: 16px;
+  }
+}
